@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD</title>
+</head>
+<body>
+    <h1 style="margin-top: 35px;">CRUDS</h1>
+    <h2>CREATE READ UPDATE DELETE SEARCH</h2>
+
+    <section id="write">
+        <input type="text" placeholder="title" class="title">
+        <div class="nums">
+            <input type="number" placeholder="price" class="price">
+            <input type="number" placeholder="taxes" class="taxes">
+            <input type="number" placeholder="ads" class="ads">
+            <input type="number" placeholder="discount" class="discount">
+            <span class="total">Total:</span>
+        </div>
+        <input type="number" placeholder="count" class="count">
+        <input type="text" placeholder="category" class="category">
+        <button style="width:100%; font-weight: 600;">Create</button>   
+        <input type="text" placeholder="search" style="margin-top: 10px;" id="search">
+        <div class="btns">
+            <button style="font-weight: 600;" class="by-title">Search By Title</button>
+            <button style="font-weight: 600;" class="by-category">Search By Category</button>
+        </div>
+        <button style="margin-top: 10px; width:100%; font-weight: 600;"class='clear'>Delete All ( <span></span> ) </button>
+    </section>
+
+    <section id="watch">
+    <table>
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>TITLE</td>
+                <td>PRICE</td>
+                <td>TAXES</td>
+                <td>ADS</td>
+                <td>DISCOUNT</td>
+                <td>TOTAL</td>
+                <td>CATEGORY</td>
+                <td>UPDATE</td>
+                <td>DELETE</td>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
